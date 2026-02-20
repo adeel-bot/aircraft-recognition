@@ -7,7 +7,8 @@ import {
   Linkedin,
   Github,
   ExternalLink,
-  BarChart
+  BarChart,
+  User2
 } from "lucide-react";
 import Header from "@/components/Header";
 import UploadZone from "@/components/UploadZone";
@@ -207,16 +208,29 @@ const Index = () => {
 
           {/* Right side: My GitHub & Project Info */}
           <div className="flex flex-col items-center gap-2 text-center sm:items-end sm:text-right">
+            <div className="flex flex-row gap-7">
+
+            <a
+              href="https://adeel-ahmad.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs font-mono text-muted-foreground hover:text-primary transition-colors"
+            >
+              <User2 className="h-3 w-3" />
+              Portfolio
+              <ExternalLink className="h-3 w-3" />
+            </a>
             <a
               href="https://github.com/adeel-bot/aircraft-recognition"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-xs font-mono text-muted-foreground hover:text-primary transition-colors"
-            >
+              >
               <Github className="h-3 w-3" />
               GitHub
               <ExternalLink className="h-3 w-3" />
             </a>
+              </div>
             <span className="font-mono text-xs text-muted-foreground">
               Academic Research Project © {new Date().getFullYear()}
             </span>
