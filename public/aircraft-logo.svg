@@ -1,0 +1,33 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Radar circles -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#1a1a1a" stroke-width="1" opacity="0.3"/>
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#1a1a1a" stroke-width="1" opacity="0.4"/>
+  <circle cx="100" cy="100" r="50" fill="none" stroke="#1a1a1a" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Crosshair lines -->
+  <line x1="100" y1="10" x2="100" y2="190" stroke="#1a1a1a" stroke-width="0.5" opacity="0.3"/>
+  <line x1="10" y1="100" x2="190" y2="100" stroke="#1a1a1a" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Fighter jet silhouette (top view) -->
+  <g transform="translate(100, 100) rotate(-45)">
+    <!-- Fuselage -->
+    <rect x="-3" y="-25" width="6" height="50" fill="#1a1a1a" rx="1"/>
+    
+    <!-- Main wings -->
+    <path d="M -30 -5 L -3 -8 L -3 8 L -30 5 Z" fill="#1a1a1a"/>
+    <path d="M 30 -5 L 3 -8 L 3 8 L 30 5 Z" fill="#1a1a1a"/>
+    
+    <!-- Tail wings -->
+    <path d="M -12 20 L -3 18 L -3 23 L -12 22 Z" fill="#1a1a1a"/>
+    <path d="M 12 20 L 3 18 L 3 23 L 12 22 Z" fill="#1a1a1a"/>
+    
+    <!-- Nose cone -->
+    <path d="M -3 -25 L 0 -30 L 3 -25 Z" fill="#1a1a1a"/>
+  </g>
+  
+  <!-- Targeting reticle corners -->
+  <path d="M 30 30 L 30 40 M 30 30 L 40 30" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <path d="M 170 30 L 170 40 M 170 30 L 160 30" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <path d="M 30 170 L 30 160 M 30 170 L 40 170" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <path d="M 170 170 L 170 160 M 170 170 L 160 170" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+</svg>
